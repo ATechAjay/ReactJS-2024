@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- #id -->
+    <div id="id"></div>
+
+    <!-- .class -->
+    <div class="class"></div>
+
+    <!-- .box[title="Important"] -->
+    <div class="box" title="Important"></div>
+
+    <!-- .parent>.child -->
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+
+    <!-- .parent{Box-$}*3 -->
+    <div class="parent">Box-1</div>
+    <div class="parent">Box-2</div>
+    <div class="parent">Box-3</div>
+
+    <!-- div>a[href='#']{Click me} -->
+    <div>
+      <a href="#">Click me</a>
+    </div>
+
+    <!-- .parent>.child{1}+.child{2} -->
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+    </div>
+
+    <!-- ul>(li>a[href='#'])+(li>a[href="#"])+p{lorem} -->
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <p>lorem</p>
+    </ul>
+
+    <!-- ul>(li>a[href='#'])*5 -->
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </body>
+</html>
