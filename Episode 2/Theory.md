@@ -1,3 +1,23 @@
+Topics Cover:
+
+- [What is NPM?](#what-is-npm)
+- [What is Parcel/Webpack? Why do we need it?](#what-is-parcelwebpack-why-do-we-need-it)
+- [What is .parcel-cache?](#what-is-parcel-cache)
+- [What is npx?](#what-is-npx)
+- [What is difference between dependencies vs devDependencies?](#what-is-difference-between-dependencies-vs-devdependencies)
+- [What is transitive dependencies?](#what-is-transitive-dependencies)
+- [What is tree shaking?](#what-is-tree-shaking)
+- [What is Hot Module Replacement?](#what-is-hot-module-replacement)
+- [What is a WebSocket?](#what-is-a-websocket)
+- [What is .gitignore file?](#what-is-gitignore-file)
+- [What is the difference between "package.json" and "package-lock.json"](#what-is-the-difference-between-packagejson-and-package-lockjson)
+- [Why should I not modify package-lock.json?](#why-should-i-not-modify-package-lockjson)
+- [What is node_modules? Is it a good idea to push it on GitHub?](#what-is-node_modules-is-it-a-good-idea-to-push-it-on-github)
+- [What is the "dist" folder?](#what-is-the-dist-folder)
+- [What is "browserlists" inside the package.json file?](#what-is-browserlists-inside-the-packagejson-file)
+- [Compare among three web bundlers Vite, Webpack, and Parcel?](#compare-among-three-web-bundlers-vite-webpack-and-parcel)
+- [Difference b/w `^` caret and `~` tilde sign inside the package.json file?](#difference-bw--caret-and--tilde-sign-inside-the-packagejson-file)
+
 # What is NPM?
 
 NPM is a package manager for JavaScript programming language, specifically designed for the Node.js runtime environment. Node.js is a server-side JavaScript runtime that allows developers to build scalable and efficient network applications.
