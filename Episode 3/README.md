@@ -12,7 +12,7 @@
 - [Explain the component composition in ReactJS](#explain-the-component-composition-in-reactjs)
 - [Explain about cross-site scripting](#explain-about-cross-site-scripting)
 - [Can you explain type="module" attribute inside script tag?](#can-you-explain-typemodule-attribute-inside-script-tag)
-- [What are the differences between {TitleComponent} VS {<TitleComponent/>} and {<TitleComponent></TitleComponent>} in JSX?](#what-are-the-differences-between-titlecomponent-vs--and--in-jsx)
+- [What are the differences between `{TitleComponent}` VS `{<TitleComponent/>}` and `{<TitleComponent></TitleComponent>}` in JSX?](#what-are-the-differences-between-titlecomponent-vs-titlecomponent-and-titlecomponenttitlecomponent-in-jsx)
 
 # What is JSX?
 
@@ -729,7 +729,7 @@ In this example, `myModule.js` contains a function `myFunction`, and it is impor
 
 Using `type="module"` is a modern approach to structuring and organizing JavaScript code in web applications.
 
-# What are the differences between {TitleComponent} vs. {<TitleComponent/>} and {<TitleComponent></TitleComponent>} in JSX?
+# What are the differences between `{TitleComponent}` vs. `{<TitleComponent/>}` and `{<TitleComponent></TitleComponent>}` in JSX?
 
 In JSX, `{TitleComponent}`, `{<TitleComponent/>}`, and `{<TitleComponent></TitleComponent>}` might look similar at first glance, but they have subtle differences in terms of how they represent React components.
 
