@@ -1,3 +1,14 @@
+- [What is Emmet?](#what-is-emmet)
+- [Difference between a Library and Framework?](#difference-between-a-library-and-framework)
+- [CDN - Content delivery network](#cdn---content-delivery-network)
+- [CDN Caching](#cdn-caching)
+- [Difference b/w cloud computing VS Edge computing?](#difference-bw-cloud-computing-vs-edge-computing)
+- [What is crossorigin in script tag?](#what-is-crossorigin-in-script-tag)
+- [Difference between React and ReactDOM](#difference-between-react-and-reactdom)
+- [What is difference between react.development.js and react.production.js files via CDN?](#what-is-difference-between-reactdevelopmentjs-and-reactproductionjs-files-via-cdn)
+- [What is async and defer?](#what-is-async-and-defer)
+- [Create a React element, create a root element, and render the React element onto a web page using React and ReactDOM.](#creating-a-react-element-creating-a-root-element-and-rendering-the-react-element-onto-a-web-page-using-react-and-reactdom)
+
 # What is Emmet?
 
 Emmet is a web developer's toolkit that can greatly improve your HTML and CSS workflow. Emmet takes the snippet idea to a whole new level. You can type a CSS-like expression that can be dynamically parsed and produce output depending on what you type in the abbreviation.
@@ -11,7 +22,7 @@ It is developed and optimized for web developers whose workflow depends on HTML 
 <!-- .class -->
 <div class="class"></div>
 
-<!-- .box[title="Important"] -->
+<!-- .box- [title="Important"] -->
 <div class="box" title="Important"></div>
 
 <!-- .parent>.child -->
@@ -24,7 +35,7 @@ It is developed and optimized for web developers whose workflow depends on HTML 
 <div class="parent">Box-2</div>
 <div class="parent">Box-3</div>
 
-<!-- div>a[href='#']{Click me} -->
+<!-- div>a- [href='#']{Click me} -->
 <div>
   <a href="#">Click me</a>
 </div>
@@ -35,14 +46,14 @@ It is developed and optimized for web developers whose workflow depends on HTML 
   <div class="child">2</div>
 </div>
 
-<!-- ul>(li>a[href='#'])+(li>a[href="#"])+p{lorem} -->
+<!-- ul>(li>a- [href='#'])+(li>a- [href="#"])+p{lorem} -->
 <ul>
   <li><a href="#"></a></li>
   <li><a href="#"></a></li>
   <p>lorem</p>
 </ul>
 
-<!-- ul>(li>a[href='#'])*5 -->
+<!-- ul>(li>a- [href='#'])*5 -->
 <ul>
   <li><a href="#"></a></li>
   <li><a href="#"></a></li>
@@ -92,7 +103,7 @@ Library is helpful to reuse the code that has already been written by someone el
 
 # CDN - Content delivery network
 
-A content delivery network (CDN) is a geographically distributed group of servers that [caches](#cdn-caching) content close to end users. A CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos.
+A content delivery network (CDN) is a geographically distributed group of servers that - [caches](#cdn-caching) content close to end users. A CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos.
 
 The popularity of CDN services continues to grow, and today the majority of web traffic is served through CDNs, including traffic from major sites like Facebook, Netflix, and Amazon.
 
@@ -333,7 +344,7 @@ These are the key difference b/w both of them:
 
 In general, if the order of script execution matters and you want them to execute after the HTML parsing is complete, you should use the `defer` attribute. If order doesn't matter, and you want scripts to execute as soon as they are downloaded, you can use the `async` attribute.
 
-# creating a React element, creating a root element, and rendering the React element onto a web page using React and ReactDOM.
+# Create a React element, create a root element, and render the React element onto a web page using React and ReactDOM.
 
 ##### How to create a React element?
 
