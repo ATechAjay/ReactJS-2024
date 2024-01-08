@@ -7,7 +7,7 @@
 - [Difference between React and ReactDOM](#difference-between-react-and-reactdom)
 - [What is difference between react.development.js and react.production.js files via CDN?](#what-is-difference-between-reactdevelopmentjs-and-reactproductionjs-files-via-cdn)
 - [What is async and defer?](#what-is-async-and-defer)
-- [Create a React element, create a root element, and render the React element onto a web page using React and ReactDOM.](#creating-a-react-element-creating-a-root-element-and-rendering-the-react-element-onto-a-web-page-using-react-and-reactdom)
+- [Create a React element, create a root element, and render the React element onto a web page using React and ReactDOM.](#create-a-react-element-create-a-root-element-and-render-the-react-element-onto-a-web-page-using-react-and-reactdom)
 
 # What is Emmet?
 

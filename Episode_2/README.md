@@ -1,5 +1,3 @@
-Topics Cover:
-
 - [What is NPM?](#what-is-npm)
 - [What is Parcel/Webpack? Why do we need it?](#what-is-parcelwebpack-why-do-we-need-it)
 - [What is .parcel-cache?](#what-is-parcel-cache)
