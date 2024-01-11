@@ -1,6 +1,6 @@
 # Topics Cover
 
-### Episode 1 1
+### Episode 1
 
 - [What is Emmet?](Episode_1/README.md#what-is-emmet)
 - [Difference between a Library and Framework?](Episode_1/README.md#difference-between-a-library-and-framework)
