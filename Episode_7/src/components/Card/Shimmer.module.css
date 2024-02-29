@@ -1,0 +1,27 @@
+.shimmer-container {
+  height: 100vh;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.shimmer-card {
+  width: 350px;
+  height: 400px;
+  transition: all 0.15s;
+  align-self: self-start;
+  background: #535353;
+  border-radius: 5px;
+  animation: scale 0.5s infinite alternate;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}

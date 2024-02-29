@@ -1,0 +1,45 @@
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #535353;
+}
+.logo-container img {
+  border-radius: 50%;
+  border: 2px solid #00ccff;
+}
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  font-size: 18px;
+  margin: 0;
+}
+.navbar a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 14px;
+  font-weight: bold;
+  transition: all 0.2s;
+  user-select: none;
+}
+.navbar a:hover {
+  background: #00ccff;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  background: #00ccff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.1s ease-in;
+}
+
+.login-btn:hover {
+  border-radius: 800px;
+} */

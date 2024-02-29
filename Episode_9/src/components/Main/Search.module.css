@@ -1,0 +1,33 @@
+.search-container {
+  margin: 30px 0;
+}
+.search-container input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: 2px solid #535353;
+  background: #0000000b;
+  color: #fff;
+}
+.search-container input:focus {
+  background: none;
+}
+
+.search-container button {
+  padding: 5px 10px;
+  font-weight: bold;
+  border: none;
+  background: #ed3237;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: all 0.1s;
+  border-radius: 7px;
+}
+.search-container button:active {
+  scale: 0.97;
+}

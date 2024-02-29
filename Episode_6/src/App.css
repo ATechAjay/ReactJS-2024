@@ -1,0 +1,21 @@
+p {
+  margin: 0;
+}
+
+.ratings {
+  color: #fff;
+  display: inline-flex;
+  padding: 5px 7px;
+  align-items: center;
+  gap: 5px;
+  background: red;
+}
+
+.avg {
+  background: #f96800;
+}
+.good {
+  background: forestgreen;
+}
+
+/* 3 color combination */

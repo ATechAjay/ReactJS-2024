@@ -1,0 +1,9 @@
+.food-is-found-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.food-is-found-container a {
+  margin-top: 250px;
+  color: #00ccff;
+}

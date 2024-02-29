@@ -1,0 +1,15 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #242424;
+  color: #fff;
+  font-family: sans-serif;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
