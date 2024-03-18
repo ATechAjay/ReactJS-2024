@@ -2,7 +2,7 @@
 const reactElement = React.createElement(
   "h1",
   { id: "titile" },
-  "This is the heading from React"
+  "This heading coming from React"
 );
 
 // console.log(reactElement);

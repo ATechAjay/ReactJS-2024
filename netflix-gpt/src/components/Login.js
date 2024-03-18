@@ -1,23 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 
 const Login = () => {
+  const [isSignInForm, setIsSignInForm] = useState(true);
+
+  const toogleSignInForm = (e) => {
+    e.preventDefault();
+    setIsSignInForm(!isSignInForm);
+  };
+
   return (
-    <div className="h-screen w-screen">
+    <div className="h-screen w-screen container text-white">
       <Header />
+      <form className="p-10 rounded-md bg-gren-500 flex flex-col w-96 gap-4 bg-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <h2 className="text-white font-bold pt-2 pb-2 text-2xl">
+          {isSignInForm ? "Sign In" : "Sign Up"}
+        </h2>
 
-      <div>
-        <img
-          className="h-screen w-screen "
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/94eb5ad7-10d8-4cca-bf45-ac52e0a052c0/IN-en-20240226-popsignuptwoweeks-perspective_alpha_website_small.jpg"
-          alt="netflix imgae"
-        />
-      </div>
+        {!isSignInForm && (
+          <div className="flex flex-col gap-2">
+            <label className="text-white">Name:</label>
+            <input
+              className="p-2 outline-none shadow bg-gray-700 text-white rounded-md	"
+              type="text"
+              placeholder="Enter your name"
+            />
+          </div>
+        )}
 
-      <form className="p-12 bg-red">
-        <input type="text" placeholder="Email address" />
-        <input type="password" placeholder="Password" />
-        <button className="">Sign in</button>
+        <div className="flex flex-col gap-2">
+          <label className="text-white">Email:</label>
+          <input
+            className="p-2 outline-none shadow bg-gray-700 text-white rounded-md	"
+            type="text"
+            placeholder="Email or phone number"
+          />
+        </div>
+        <div className="flex flex-col gap-2">
+          <label className="text-white">Password:</label>
+          <input
+            className="p-2 outline-none shadow bg-gray-700 text-white rounded-md	"
+            type="password"
+            placeholder=" Enter password"
+          />
+        </div>
+        <button className="mt-5 transition-all	 bg-[#c11119] hover:bg-red-700 text-white p-2 rounded-md font-bold text-white">
+          {isSignInForm ? "Sign In" : "Sign Up"}
+        </button>
+        <p className="pt-2">
+          {isSignInForm ? "New to Netflix? " : "Already a user? "}
+
+          <button
+            className="text-red-500 hover:underline bg-none border-none  cursor-pointer"
+            onClick={toogleSignInForm}
+          >
+            {isSignInForm ? "Sign up now." : "Sign in now. "}
+          </button>
+        </p>
       </form>
     </div>
   );

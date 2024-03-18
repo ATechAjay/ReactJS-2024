@@ -13,7 +13,7 @@
   - Main movie
   - Trailer in bg
   - Title and description
-  - Movies suggetion
+  - Movies suggestion
   - MoviesList`*`n
 - Netflix GPT
   - Search bar
