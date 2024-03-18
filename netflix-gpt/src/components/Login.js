@@ -75,7 +75,7 @@ const Login = () => {
   return (
     <div className="h-screen w-screen container text-white">
       <Header />
-      <form className="p-10 rounded-md bg-gren-500 flex flex-col w-96 gap-4 bg-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <form className="p-10 rounded-md bg-gren-500 flex flex-col w-96 gap-4 bg-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2">
         <h2 className="text-white font-bold pt-2 pb-2 text-2xl">
           {isSignInForm ? "Sign In" : "Sign Up"}
         </h2>
