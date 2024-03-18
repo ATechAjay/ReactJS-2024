@@ -1,8 +1,26 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Header from "./Header";
+import validate from "./utils/validate";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
+  const [errMessage, setErrMessage] = useState(null);
+
+  const fullName = useRef(null);
+  const email = useRef(null);
+  const password = useRef(null);
+
+  const clickHandler = (e) => {
+    e.preventDefault();
+    // Form validation
+    const errMessage = validate(
+      email?.current?.value,
+      password?.current?.value,
+      fullName?.current?.value
+    );
+
+    setErrMessage(errMessage);
+  };
 
   const toogleSignInForm = (e) => {
     e.preventDefault();
@@ -19,11 +37,12 @@ const Login = () => {
 
         {!isSignInForm && (
           <div className="flex flex-col gap-2">
-            <label className="text-white">Name:</label>
+            <label className="text-white">Full name:</label>
             <input
               className="p-2 outline-none shadow bg-gray-700 text-white rounded-md	"
               type="text"
               placeholder="Enter your name"
+              ref={fullName}
             />
           </div>
         )}
@@ -34,6 +53,8 @@ const Login = () => {
             className="p-2 outline-none shadow bg-gray-700 text-white rounded-md	"
             type="text"
             placeholder="Email or phone number"
+            ref={email}
+            autoComplete="on"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -42,9 +63,15 @@ const Login = () => {
             className="p-2 outline-none shadow bg-gray-700 text-white rounded-md	"
             type="password"
             placeholder=" Enter password"
+            ref={password}
+            autoComplete="on"
           />
         </div>
-        <button className="mt-5 transition-all	 bg-[#c11119] hover:bg-red-700 text-white p-2 rounded-md font-bold text-white">
+        <p className="text-[#c11119] font-bold">{errMessage}</p>
+        <button
+          className=" transition-all	 bg-[#c11119] hover:bg-red-700 text-white p-2 rounded-md font-bold"
+          onClick={clickHandler}
+        >
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
         <p className="pt-2">
